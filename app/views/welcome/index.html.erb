@@ -1,10 +1,7 @@
 <h1>Welcome!</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <p>Date: <%= datetime_brazil(Date.today) %></p>
-<ul>
-    <li>
-        <%= link_to "Register Coin", coins_path%>
-    </li>
-</ul>
+
+<%= render "menu" %>
 
 <p><strong>You are in a <%= Rails.env %> environment.</strong></p>
